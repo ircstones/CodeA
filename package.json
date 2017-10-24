@@ -1,0 +1,21 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "All CodeAcademy projects",
+  "main": "rockPaperSCissors.js",
+  "scripts": {
+    "test": "node rockPaperScissors.js"
+  },
+  "author": "CStone",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ircstones/CodeA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ircstones/CodeA/issues"
+  },
+  "homepage": "https://github.com/ircstones/CodeA#readme"
+}
