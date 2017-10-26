@@ -4,7 +4,7 @@
   "description": "All CodeAcademy projects",
   "main": "rockPaperSCissors.js",
   "scripts": {
-    "test": "node rockPaperScissors.js"
+    "test": "node trainingDaysV2.js"
   },
   "author": "CStone",
   "license": "ISC",

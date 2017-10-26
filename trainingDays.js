@@ -2,19 +2,24 @@ let allEvents;
 let event;
 const eventTrainingTimes = {'Marathon': 50, 'Triathlon': 100, 'Decathlon': 200 };
 
+const aEvents = () => {
+  allevents = ['Marathon', 'Triathlon', 'Decathlon'];
+  return allevents;
+}
+
 /* this is used a few places and it is vulnerable */
 
 const getRandomEvent = () => {
-  allEvents = ['Marathon', 'Triathlon', 'Decathlon'];
-  event = allEvents[Math.floor(Math.random() * allEvents.length)];
+  const allE = aEvents();
+  event = allE[Math.floor(Math.random() * allE.length)];
 };
 
 
 const getEventActivities = () => {
-  allEvents = ['Marathon', 'Triathlon', 'Decathlon'];
+  const allE = aEvents();
 
-  if (!allEvents.includes(event)) {
-    return null;
+  if (!allE.includes(event)) {
+    return allEnull;
   }
 
   if (event === 'Marathon') {
@@ -33,8 +38,8 @@ const getEventActivities = () => {
 };
 
 const getDaysToTrain = () => {
-  allEvents = ['Marathon', 'Triathlon', 'Decathlon'];
-  if (!allEvents.includes(event)) {
+  allE = eEvents();
+  if (!allE.includes(event)) {
     return null;
   }
 
