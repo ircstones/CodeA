@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "utf-8">
+  <title>Car Object</title>
+  <script type="text/javascript">
+
+    function Car(model, distanceMoved, timeElapsed){
+      this.model = model;
+      this.distanceMoved = distanceMoved;
+      this.timeElapsed = timeElapsed;
+
+      this.velocity = function(){
+        var result = this.distanceMoved / this.timeElapsed;
+        return result;
+      }
+
+
+    }
+
+
+    var myCar = new Car("Audi", 120, 1.2);
+    var myCar2 = new Car("BMW", 60, .50);
+
+    document.writeln(myCar.velocity()+" km/hr");
+    document.writeln(myCar2.velocity()+" km/hr");
+
+  </script>
+</head>
+<body></body>
+</html>
