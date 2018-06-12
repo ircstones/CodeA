@@ -49,21 +49,21 @@ toggleAll: function(){
   if(completedTodos === totalTodos){
     for(var i = 0; i < this.todos.length ; i++){
      this.todos[i].completed = false;
-   } 
+   }
 
-  } else { 
+  } else {
       for(var i = 0; i < this.todos.length ; i++){
      this.todos[i].completed = true;
    }
   } this.displayTodos();
- } 
+ }
 };
- 
+
 //Handlers Object for HTML
 
  var handlers = {
    displayTodos: function(){
-   todoList.displayTodos(); 
+   todoList.displayTodos();
    },
   addTodos:function(){
     var addTodoTextInput = document.getElementById('addTodoTextInput');
@@ -102,17 +102,15 @@ toggleAll: function(){
      var todosLi = document.createElement('li');
      var todo = todoList.todos[i];
      var todoTextWithCompletion = '';
-     
+
      if(todo.completed === true){
        todoTextWithCompletion = '(x)'  + todo.todoText;
      }else{
        todoTextWithCompletion = '( )'  + todo.todoText;
      }
-     
+     /** Working on the  Display bck to the DOM **/
      todosLi.textContent = todoTextWithCompletion;
      todosUl.appendChild(todosLi);
    }
   }
  };
-
-
